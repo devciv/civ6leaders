@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Civilization VI Leaders</title>
+    <link rel="icon" href="favicon.png" />
+    <style>
+      * {
+        font-family: rubik, helvetica, arial, sans-serif;
+        background-color: #c4a27b;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Ensure padding/borders are included in width/height */
+      }
+      /* table */
+      table {
+        border-collapse: collapse;
+        width: 50%; /* Sets each table to take up 50% of the container's width */
+        margin: 5px 5px;
+        font-size: 14px;
+        text-align: left;
+        border: 2px solid #404040;
+      }
+
+      th,
+      td {
+        border: 2px solid #404040;
+        padding: 5px; /* Consistent padding */
+      }
+      th {
+        text-align: center;
+      }
+      /* caption styles */
+      caption {
+        font-weight: bold; /* Optional styling for the text */
+        text-align: center; /* Center-align the caption text */
+        /* Border around the caption */
+        border: 2px solid #404040;
+        border-bottom: none;
+      }
+      /* checkbox*/
+      td.checkbox-cell {
+        text-align: center; /* Horizontally center checkboxes */
+        vertical-align: middle; /* Vertically center checkboxes */
+      }
+      input[type="checkbox"] {
+        appearance: none; /* Removes browser's native styling */
+        -webkit-appearance: none; /* For Safari */
+        display: inline-block; /* Ensure checkbox aligns properly */
+        vertical-align: middle;
+        position: relative;
+        width: 20px; /* Set a fixed size */
+        height: 20px;
+        background-color: #e0c6a7; /* Default background color */
+        border: 2px solid #404040; /* Add a border */
+        border-radius: 4px; /* Optional: Rounded corners */
+        cursor: pointer; /* Add a pointer cursor */
+      }
+      input[type="checkbox"]:checked {
+        background-color: #b47c6a; /* Background when checked */
+      }
+
+      input[type="checkbox"]::before {
+        position: absolute; /* Positioned relative to the checkbox */
+        top: -15%;
+        left: 10%;
+        font-size: 16px;
+        /* Adjust size for the checkmark */
+      }
+
+      input[type="checkbox"]:checked::before {
+        content: "✔"; /* Add a checkmark */
+        display: block;
+        text-align: center;
+        color: #404040; /* Checkmark color */
+      }
+
+      /* horizontal adjacency for tables */
+      .container {
+        display: flex; /* Enables flexbox */
+        justify-content: space-between; /* Optional: Adds spacing between tables */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table border="1">
+        <thead>
+          <tr>
+            <!-- <th></th> -->
+            <th>Leader</th>
+            <th>Quote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Augustus Caesar</td>
+            <td>I found Rome a city of bricks and left it a city of marble.</td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Hammurabi</td>
+            <td>
+              The first duty of government is to protect the powerless from the
+              powerful.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Abraham Lincoln</td>
+            <td>Leave nothing for tomorrow which can be done today.</td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Winston Churchill</td>
+            <td>
+              Where there is great power there is great responsibility; where
+              there is less power there is less responsibility; and where there
+              is no power there can, I think, be no responsibility.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Nelson Mandela</td>
+            <td>
+              Real leaders must be ready to sacrifice all for the freedom of
+              their people.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Catherine the Great</td>
+            <td>Power without a nation's confidence is nothing.</td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Ashoka</td>
+            <td>
+              It is forbidden to decry other sects; the true believer gives
+              honor to whatever in them is worthy of honor.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Marcus Aurelius</td>
+            <td>
+              The object of life is not to be on the side of the majority, but
+              to escape finding oneself in the ranks of the insane.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Lech Wałęsa</td>
+            <td>
+              As a nation, we have the right to decide our own affairs, to mold
+              our own future.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Hatshepsut</td>
+            <td>
+              Hear ye, all persons! Ye people as many as ye are! I have done
+              things according to the design of my heart.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Charles de Gaulle</td>
+            <td>
+              Let us be firm, pure and faithful; at the end of our sorrow, there
+              is the greatest glory of the world, that of the men who did not
+              give in.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Eleanor of Aquitaine (Vanilla and R&amp;F)</td>
+            <td>
+              Pitiful and pitied by no one, why have I come to the ignominy of
+              this detestable old age, who was ruler of two kingdoms, mother of
+              two kings? My guts are torn from me, my family is carried off and
+              removed from me.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Louis XV (GS)</td>
+            <td>After me, the flood.</td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Ivan the Terrible</td>
+            <td>
+              To shave the beard is a sin that the blood of all martyrs cannot
+              cleanse. It is to deface the image of God.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Herbert Hoover</td>
+            <td>
+              What the country needs is a good big laugh … if someone could get
+              off a good joke every ten days, I think our troubles would be
+              over.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Louis XVI</td>
+            <td>
+              Every time that I fill a high office, I create a hundred
+              discontented men and an ingrate.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Neville Chamberlain</td>
+            <td>Peace in our time.</td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Nero</td>
+            <td>
+              A man who is always ready to believe what is told him will never
+              do well.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Warren G. Harding</td>
+            <td>
+              Our most dangerous tendency is to expect too much of government,
+              and at the same time do for it too little.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Ethelred the Unready</td>
+            <td>
+              In the name of the Holy Trinity, three things do I promise to this
+              Christian people, my subjects: first, that I will hold God's
+              Church and all the Christian people of my realm in true peace;
+              secondly, that I will forbid all rapine and injustice to men of
+              all conditions; thirdly, that I promise and enjoin justice and
+              mercy in all judgments.
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Mary Tudor I</td>
+            <td>
+              In thee, O Lord, is my trust; let me never be confounded: if God
+              be for us, who can be against us?
+            </td>
+          </tr>
+          <tr>
+            <!-- <td><input type="checkbox" /></td> -->
+            <td>Dan Quayle</td>
+            <td>
+              We are ready for any unforeseen event that may or may not occur.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Leaders</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Qin Shi Huang</td>
+          </tr>
+          <tr>
+            <td>Trajan</td>
+          </tr>
+          <tr>
+            <td>Frederick Barbarossa</td>
+          </tr>
+          <tr>
+            <td>Theodore Roosevelt</td>
+          </tr>
+          <tr>
+            <td>Peter the Great</td>
+          </tr>
+          <tr>
+            <td>Hojo Tokimune</td>
+          </tr>
+          <tr>
+            <td>Victoria</td>
+          </tr>
+          <tr>
+            <td>Cleopatra</td>
+          </tr>
+          <tr>
+            <td>Gilgamesh</td>
+          </tr>
+          <tr>
+            <td>Catherine De Medici</td>
+          </tr>
+          <tr>
+            <td>Pericles</td>
+          </tr>
+          <tr>
+            <td>Tomyris</td>
+          </tr>
+          <tr>
+            <td>Montezuma</td>
+          </tr>
+          <tr>
+            <td>Queen Seondeok</td>
+          </tr>
+          <tr>
+            <td>Gorgo</td>
+          </tr>
+          <tr>
+            <td>Mvemba a Nzinga</td>
+          </tr>
+          <tr>
+            <td>Pedro II</td>
+          </tr>
+          <tr>
+            <td>Eleanor of Quitaine</td>
+          </tr>
+          <tr>
+            <td>Harald Hardrada</td>
+          </tr>
+          <tr>
+            <td>Saladin</td>
+          </tr>
+          <tr>
+            <td>Philip II</td>
+          </tr>
+          <tr>
+            <td>John Curtin</td>
+          </tr>
+          <tr>
+            <td>Alexander</td>
+          </tr>
+          <tr>
+            <td>Gandhi</td>
+          </tr>
+          <tr>
+            <td>Amanitore</td>
+          </tr>
+          <tr>
+            <td>Kupe</td>
+          </tr>
+          <tr>
+            <td>Queen Wilhelmina</td>
+          </tr>
+          <tr>
+            <td>Poundmaker</td>
+          </tr>
+          <tr>
+            <td>Jadwiga</td>
+          </tr>
+          <tr>
+            <td>Jayavarman VII</td>
+          </tr>
+          <tr>
+            <td>Kristina</td>
+          </tr>
+          <tr>
+            <td>Wilfrid Laurier</td>
+          </tr>
+          <tr>
+            <td>Genghis Khan</td>
+          </tr>
+          <tr>
+            <td>Robert the Bruce</td>
+          </tr>
+          <tr>
+            <td>Pachacuti</td>
+          </tr>
+          <tr>
+            <td>Hammurabi</td>
+          </tr>
+          <tr>
+            <td>Cyrus</td>
+          </tr>
+          <tr>
+            <td>Gitarja</td>
+          </tr>
+          <tr>
+            <td>Mansa Musa</td>
+          </tr>
+          <tr>
+            <td>Suleiman The Magnificent</td>
+          </tr>
+          <tr>
+            <td>Shaka</td>
+          </tr>
+          <tr>
+            <td>Ambiorix</td>
+          </tr>
+          <tr>
+            <td>Joao III</td>
+          </tr>
+          <tr>
+            <td>Dido</td>
+          </tr>
+          <tr>
+            <td>Matthias Corvinus</td>
+          </tr>
+          <tr>
+            <td>Basil II</td>
+          </tr>
+          <tr>
+            <td>Simon Bolivar</td>
+          </tr>
+          <tr>
+            <td>Tamar</td>
+          </tr>
+          <tr>
+            <td>Lautaro</td>
+          </tr>
+          <tr>
+            <td>Lady Six Sky</td>
+          </tr>
+          <tr>
+            <td>Ba Trieu</td>
+          </tr>
+          <tr>
+            <td>Chandragupta</td>
+          </tr>
+          <tr>
+            <td>Menelik II</td>
+          </tr>
+          <tr>
+            <td>Kublai Khan</td>
+          </tr>
+          <tr>
+            <td>Yongle</td>
+          </tr>
+          <tr>
+            <td>Abraham Lincoln</td>
+          </tr>
+          <tr>
+            <td>Julius Caesar</td>
+          </tr>
+          <tr>
+            <td>Nzinga Mbande</td>
+          </tr>
+          <tr>
+            <td>Tokugawa</td>
+          </tr>
+          <tr>
+            <td>Sejong</td>
+          </tr>
+          <tr>
+            <td>Ludwig II</td>
+          </tr>
+          <tr>
+            <td>Theodora</td>
+          </tr>
+          <tr>
+            <td>Elizabeth I</td>
+          </tr>
+          <tr>
+            <td>Nader Shah</td>
+          </tr>
+          <tr>
+            <td>Wu Zetian</td>
+          </tr>
+          <tr>
+            <td>Ramses II</td>
+          </tr>
+          <tr>
+            <td>Suniata Keita</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
