@@ -20,13 +20,12 @@
         margin: 5px 5px;
         font-size: 14px;
         text-align: left;
-        border: 2px solid #404040;
       }
 
       th,
       td {
         border: 2px solid #404040;
-        padding: 5px; /* Consistent padding */
+        padding: 1px 0px 1px 2px; /* Consistent padding */
       }
       th {
         text-align: center;
@@ -35,9 +34,6 @@
       caption {
         font-weight: bold; /* Optional styling for the text */
         text-align: center; /* Center-align the caption text */
-        /* Border around the caption */
-        border: 2px solid #404040;
-        border-bottom: none;
       }
       /* checkbox*/
       td.checkbox-cell {
@@ -79,13 +75,13 @@
       /* horizontal adjacency for tables */
       .container {
         display: flex; /* Enables flexbox */
-        justify-content: space-between; /* Optional: Adds spacing between tables */
+        align-items: flex-start; /*remove to make table 1 stretch to table 2's height*/
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <table border="1">
+      <table class="score">
         <thead>
           <tr>
             <!-- <th></th> -->
@@ -202,7 +198,7 @@
             <!-- <td><input type="checkbox" /></td> -->
             <td>Herbert Hoover</td>
             <td>
-              What the country needs is a good big laugh … if someone could get
+              What the country needs is a good big laugh... if someone could get
               off a good joke every ten days, I think our troubles would be
               over.
             </td>
@@ -265,7 +261,7 @@
           </tr>
         </tbody>
       </table>
-      <table border="1">
+      <table class="leaders">
         <thead>
           <tr>
             <th>Leaders</th>
